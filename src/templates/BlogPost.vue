@@ -3,7 +3,7 @@
     <div class="article">
       <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
-      <img :src="$page.blogPost.fields.image"/>
+      <img :src="$page.blogPost.fields.thumbnail"/>
       <div class="content" v-html="$page.blogPost.content" />
     </div>
   </Layout>
@@ -26,7 +26,7 @@ export default {
       date (format: "D MMMM, YYYY")
       content
       fields {
-        image
+        thumbnail
       }
     }
   }
